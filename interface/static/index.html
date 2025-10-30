@@ -4,11 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>efefef</h1>
+  <div class="v-container">
+    <div class="palete">
+      <div class="music-player">
+        <div class="music-play-control flex">
+          <div class="music-file-preview">
+            <img id="music-file" src="assets/icons/default-file.svg">
+          </div>
+
+          <div class="play-control flex">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+
+            <div class="play-pause flex">
+              <button class="btn-play-pause"><img src="assets/icons/skip-prev.svg"></button>
+              <button onclick="togglePlayPause()" class="btn-play-pause"><img id="play-pause"
+                  src="assets/icons/play.svg"></button>
+              <button class="btn-play-pause"><img src="assets/icons/skip-next.svg"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="palete"></div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
